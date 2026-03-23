@@ -1,0 +1,214 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  /* height: 100vh; */
+  margin: 0;
+  display: flex;
+  /* justify-content:space-around; */
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  /* gap: 30px; */
+
+  /* background:pink; */
+}
+.heading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 40px; */
+  /* background-color: yellow; */
+}
+.heading h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+#main {
+  width: 100vw;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* padding: 50px 0; */
+  /* flex-direction: column; */
+}
+.game {
+    width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  margin: 20px;
+}
+.choice, .score-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.choice div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.choice button {
+  padding: 10px 20px;
+}
+h1 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+#container {
+  width: 35vw;
+  height: 35vw;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
+
+  /* flex-direction: column */
+}
+.box {
+  width: 33.33%;
+  height: 33.33%;
+  background: red;
+  border-radius: 20px;
+  overflow: hidden;
+}
+input {
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+#reset, #resetScores {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+#NewGame {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  display: none;
+}
+/* rock paper scissors game   */
+
+.RPS {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.imgbox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.imgbox > div {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  border-radius: 100%;
+  background-color: red;
+  overflow: hidden;
+}
+.imgbox > div:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+  border: #000 solid 5px;
+}
+.imgbox > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.result {
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* gap: 50px; */
+}
+.result > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.result > div p {
+  font-size: 9vh;
+  font-weight: bold;
+}
+
+.winnMsgBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.winnMsgBox div {
+  /* width: 300px; */
+  /* height: 100px; */
+  background-color: #000;
+  color: #fff;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 20%; */
+  padding: 19px;
+}
+/* Mobile (default) */
+@media (max-width: 480px) {
+  #main {
+    flex-direction: column;
+  }.game {
+    width: 100%;
+  }
+  #container {
+    width: 80vw;
+    height: 80vw;
+  }
+ }
+
+/* Small devices (phones) */
+@media (max-width: 768px) {
+#main {
+    flex-direction: column;
+    gap: 14vh;
+  }
+  .game {
+    width: 100%;
+  }
+  #container {
+    width: 80vw;
+    height: 80vw;
+  }
+ }
+
+/* Tablets */
+@media (max-width: 1024px) { }
+
+/* Laptops */
+@media (max-width: 1280px) { }
+
+/* Large screens */
+@media (min-width: 1281px) { }

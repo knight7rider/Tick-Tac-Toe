@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="heading"><h1>tik-tac-toe</h1></div>
+
+    <div id="main">
+      <div class="setting">
+        <div class="result">
+          <h2 id="result"></h2>
+          <button id="NewGame">New Game</button>
+        </div>
+        <div class="choice">
+          <h2>Choose your side</h2>
+          <div><button id="x">X</button><button id="o">O</button></div>
+          <p>*By default, O goes first</p>
+        </div>
+        <div class="score-div">
+        <div class="scoreboard">
+          <h3>Score Board</h3>
+          <p>X Wins: <span id="xScore">0</span></p>
+          <p>O Wins: <span id="oScore">0</span></p>
+          <button id="resetScores">Reset Scores</button>
+        </div>
+         
+        <p>
+          *if  you lose you then your score will be deducted <br>
+        *your score will be increased if you win <br>
+        <b>**if you lose you have to complete a dare </b> <br>
+      </p>
+      </div>
+      </div>
+      <div class="game">
+        <div id="container">
+          <div class="box"><input type="button" class="btn" /></div>
+          <div class="box"><input type="button" class="btn" /></div>
+          <div class="box"><input type="button" class="btn" /></div>
+          <div class="box"><input type="button" class="btn" /></div>
+          <div class="box"><input type="button" class="btn" /></div>
+          <div class="box"><input type="button" class="btn" /></div>
+          <div class="box"><input type="button" class="btn" /></div>
+          <div class="box"><input type="button" class="btn" /></div>
+          <div class="box"><input type="button" class="btn" /></div>
+          <!-- 
+           <ul id="input"></ul> -->
+        </div>
+        <button id="reset">Restart</button>
+      </div>
+      
+    </div>
+    <!-- rock paper scissors game  -->
+
+    <!-- <s
+     cript src="index.js"></script> -->
+    <!-- <script src="guessTheNumber.js"></script> -->
+    <!-- <script src="project.js"></script> -->
+    <script src="ticTackToe.js"></script>
+  </body>
+</html>
